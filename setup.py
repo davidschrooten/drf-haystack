@@ -54,5 +54,10 @@ setup(
         "Programming Language :: Python :: 3",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
+    extras_require={
+        "elasticsearch": [
+            "django-haystack[elasticsearch]>=2.8,<=3.2"
+        ],
+    },
     python_requires=">=3.7"
 )
